@@ -1,0 +1,22 @@
+Db: /var/eventstore/
+Log: /var/log/eventstore/
+
+IntIp: XX.XX.XX.XX
+IntHttpPort: 1114
+IntTcpPort: 1112
+
+ExtIp: XX.XX.XX.XX
+ExtHttpPort: 1113
+ExtTcpPort: 1111
+
+RunProjections: all
+
+#Cluster Stuff
+#ClusterSize: 3 #Number of nodes in the cluster
+#CommitCount: 2 #The number of nodes which must acknowledge commits before responding to clients
+#PrepareCount: 2 #The number of nodes which must acknowledge prepares
+
+#DiscoverViaDns: false #use gossip seed instead
+#GossipSeed: #How to discover other nodes
+        - XX.XX.XX.XX:1114 #es2 internal http
+        - XX.XX.XX.XX:1114 #es3 internal http
