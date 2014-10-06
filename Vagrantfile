@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # installs required packages
   config.vm.provision :shell, path: "bootstrap.sh"
   
-  # clones both ES repositories
+  # clones ES repository
   #config.vm.provision :shell, path: "clone-es.sh", privileged: false
 
   # this is needed for github clone to work nicely, will use hosts private key
